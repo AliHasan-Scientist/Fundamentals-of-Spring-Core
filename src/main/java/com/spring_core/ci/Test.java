@@ -11,5 +11,7 @@ public class Test {
 		System.out.println();
 		Sample sample = (Sample) context.getBean("samp");
 		sample.doSum();
+		
 	}
 }
+//life cycle methods
