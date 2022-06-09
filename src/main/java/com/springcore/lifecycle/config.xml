@@ -11,7 +11,9 @@
 		init-method="journey" destroy-method="die">
 		<property name="price" value="1500" />
 	</bean>
-	<bean class="com.springcore.lifecycle.Scientist" name="scientist">
-		<property name="id" value="0001" />
+	<!-- <bean class="com.springcore.lifecycle.Scientist" name="scientist"> 
+		<property name="id" value="0001" /> </bean> -->
+	<bean class="com.springcore.lifecycle.Anno" name="anno">
+		<property name="type" value="Get" />
 	</bean>
 </beans> 
