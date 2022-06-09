@@ -1,4 +1,6 @@
-package com.springcore.auto.wiring;
+package com.springcore.auto.wiring.annotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Emp {
 	private Address address;
@@ -6,10 +8,10 @@ public class Emp {
 	public Address getAddress() {
 		return address;
 	}
-
+@Autowired
 	public void setAddress(Address address) {
 		this.address = address;
-		System.out.println("setters method");
+		System.out.println("in setter method");
 	}
 
 	public Emp(Address address) {
@@ -20,9 +22,9 @@ public class Emp {
 
 	public Emp() {
 		super();
-
+		
 		// TODO Auto-generated constructor stub
-
+	
 	}
 
 	@Override

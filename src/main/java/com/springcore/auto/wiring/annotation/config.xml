@@ -7,14 +7,14 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-
-	<bean class="com.springcore.auto.wiring.Address" name="address">
+	<context:annotation-config />
+	<bean class="com.springcore.auto.wiring.annotation.Address"
+		name="address">
 		<property name="street" value="24" />
 		<property name="city" value="Vehari" />
 	</bean>
 	<!-- We can call object byName , byType , constructor -->
-	<bean class="com.springcore.auto.wiring.Emp" name="emp"
-		autowire="byName" />
-
+	<bean class="com.springcore.auto.wiring.annotation.Emp" name="emp">
+	</bean>
 
 </beans>
